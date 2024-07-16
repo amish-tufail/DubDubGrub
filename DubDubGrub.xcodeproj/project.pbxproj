@@ -15,6 +15,7 @@
 		046656092C4674F00027A6AD /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046656082C4674F00027A6AD /* LocationMapView.swift */; };
 		0466560B2C46750F0027A6AD /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0466560A2C46750F0027A6AD /* LocationListView.swift */; };
 		0466560D2C46751C0027A6AD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0466560C2C46751C0027A6AD /* ProfileView.swift */; };
+		0466560F2C467B890027A6AD /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0466560E2C467B890027A6AD /* LocationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		046656082C4674F00027A6AD /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
 		0466560A2C46750F0027A6AD /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		0466560C2C46751C0027A6AD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0466560E2C467B890027A6AD /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				044BD7262C368085003E91D6 /* DubDubGrubApp.swift */,
 				046656062C4674E10027A6AD /* AppTabView.swift */,
 				0466560A2C46750F0027A6AD /* LocationListView.swift */,
+				0466560E2C467B890027A6AD /* LocationDetailView.swift */,
 				0466560C2C46751C0027A6AD /* ProfileView.swift */,
 				046656082C4674F00027A6AD /* LocationMapView.swift */,
 				046656042C4674580027A6AD /* Color + Ext.swift */,
@@ -154,6 +157,7 @@
 				044BD7272C368085003E91D6 /* DubDubGrubApp.swift in Sources */,
 				046656092C4674F00027A6AD /* LocationMapView.swift in Sources */,
 				0466560B2C46750F0027A6AD /* LocationListView.swift in Sources */,
+				0466560F2C467B890027A6AD /* LocationDetailView.swift in Sources */,
 				046656072C4674E10027A6AD /* AppTabView.swift in Sources */,
 				0466560D2C46751C0027A6AD /* ProfileView.swift in Sources */,
 				046656052C4674580027A6AD /* Color + Ext.swift in Sources */,

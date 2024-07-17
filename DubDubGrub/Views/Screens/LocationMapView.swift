@@ -19,14 +19,21 @@ struct LocationMapView: View {
     var body: some View {
         ZStack(alignment: .top) {
             Map(coordinateRegion: $region).ignoresSafeArea()
-            Image(.ddgMapLogo)
-                .resizable()
-                .scaledToFit()
-                .frame(height: 70.0)
+            LogoView()
+                .shadow(radius: 10.0)
         }
     }
 }
 
 #Preview {
     LocationMapView()
+}
+
+struct LogoView: View {
+    var body: some View {
+        Image(.ddgMapLogo)
+            .resizable()
+            .scaledToFit()
+            .frame(height: 70.0)
+    }
 }

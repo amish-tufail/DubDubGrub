@@ -11,23 +11,9 @@ struct LocationDetailView: View {
     let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     var body: some View {
         VStack(spacing: 16.0) {
-            Image(.defaultBannerAsset)
-                .resizable()
-                .scaledToFill()
-                .frame(height: 120.0)
-            HStack {
-                Label("123 Main Street", systemImage: "mappin.and.ellipse")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.leading)
-            
-            Text("This is a test description. This is a test description. This is a test description. This is a test description.")
-                .lineLimit(3)
-                .minimumScaleFactor(0.75)
-//                .frame(height: 70.0)
-                .padding(.horizontal)
+            bannerImage
+            addressSection
+            descriptionSection
             
             HStack(spacing: 20.0) {
                 LocationActionButton(color: .brandPrimary, imageName: "location.fill")
@@ -101,5 +87,32 @@ struct FirstNameAvatarView: View {
                 .lineLimit(1)
                 .minimumScaleFactor(0.75)
         }
+    }
+}
+
+extension LocationDetailView {
+    private var bannerImage: some View {
+        Image(.defaultBannerAsset)
+            .resizable()
+            .scaledToFill()
+            .frame(height: 120.0)
+    }
+    
+    private var addressSection: some View {
+        HStack {
+            Label("123 Main Street", systemImage: "mappin.and.ellipse")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.leading)
+    }
+    
+    private var descriptionSection: some View {
+        Text("This is a test description. This is a test description. This is a test description. This is a test description.")
+            .lineLimit(3)
+            .minimumScaleFactor(0.75)
+//                .frame(height: 70.0)
+            .padding(.horizontal)
     }
 }

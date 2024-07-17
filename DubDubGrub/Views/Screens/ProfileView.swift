@@ -18,23 +18,14 @@ struct ProfileView: View {
             HStack(spacing: 16.0) {
                 ZStack {
                     AvatarView(size: 84.0)
-                    Image(systemName: "square.and.pencil")
-                        .resizable()
-                        .fontWeight(.bold)
-                        .frame(width: 14.0, height: 14.0)
-                        .foregroundStyle(.white)
-                        .offset(y: 30.0)
+                    editImage
                 }
                 .padding(.leading, 12.0)
-                VStack {
+                VStack(spacing: 1.0) {
                     TextField("First Name", text: $firstName)
-                        .font(.system(size: 32.0, weight: .bold))
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.75)
+                        .profileNameStyle()
                     TextField("Last Name", text: $lastName)
-                        .font(.system(size: 32.0, weight: .bold))
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.75)
+                        .profileNameStyle()
                     TextField("Company Name", text: $companyName)
                 }
                 .padding(.trailing, 16.0)
@@ -49,19 +40,7 @@ struct ProfileView: View {
             .padding(.horizontal)
             
             VStack(alignment: .leading, spacing: 8.0) {
-                Text("Bio: ")
-                    .font(.callout)
-                    .foregroundStyle(.secondary)
-                +
-                Text("\(100 - bio.count)")
-                    .bold()
-                    .font(.callout)
-                    .foregroundStyle(bio.count <= 100 ? .brandPrimary : Color(.systemPink))
-                +
-                Text(" Characters Remain")
-                    .font(.callout)
-                    .foregroundStyle(.secondary)
-                
+                charactersRemain
                 TextEditor(text: $bio)
                     .frame(height: 100.0)
                     .overlay {
@@ -75,12 +54,7 @@ struct ProfileView: View {
             Button {
                 
             } label: {
-                Text("Create Profile")
-                    .bold()
-                    .frame(width: 280.0, height: 44.0)
-                    .background(Color.brandPrimary)
-                    .foregroundStyle(.white)
-                    .cornerRadius(8.0)
+                DDGButton(title: "Create Profile")
             }
         }
         .navigationTitle("Profile")
@@ -92,3 +66,30 @@ struct ProfileView: View {
         ProfileView()
     }
 }
+
+extension ProfileView {
+    private var editImage: some View {
+        Image(systemName: "square.and.pencil")
+            .resizable()
+            .fontWeight(.bold)
+            .frame(width: 14.0, height: 14.0)
+            .foregroundStyle(.white)
+            .offset(y: 30.0)
+    }
+    
+    private var charactersRemain: some View {
+        Text("Bio: ")
+            .font(.callout)
+            .foregroundStyle(.secondary)
+        +
+        Text("\(100 - bio.count)")
+            .bold()
+            .font(.callout)
+            .foregroundStyle(bio.count <= 100 ? .brandPrimary : Color(.systemPink))
+        +
+        Text(" Characters Remain")
+            .font(.callout)
+            .foregroundStyle(.secondary)
+    }
+}
+

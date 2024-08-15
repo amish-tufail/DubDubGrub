@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04053C342C6CBF9700DC6DC2 /* DDGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04053C332C6CBF9700DC6DC2 /* DDGLocation.swift */; };
 		042660A02C47FC600085CD9C /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426609F2C47FC600085CD9C /* LocationCell.swift */; };
 		042660A22C47FC770085CD9C /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042660A12C47FC770085CD9C /* AvatarView.swift */; };
 		042660A42C47FDCF0085CD9C /* View + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042660A32C47FDCF0085CD9C /* View + Ext.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04053C332C6CBF9700DC6DC2 /* DDGLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
 		0426609F2C47FC600085CD9C /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		042660A12C47FC770085CD9C /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		042660A32C47FDCF0085CD9C /* View + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Ext.swift"; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04053C322C6CBF8C00DC6DC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04053C332C6CBF9700DC6DC2 /* DDGLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		042660A72C47FF000085CD9C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +130,7 @@
 			children = (
 				044A59022C36824A0013B5E6 /* DubDubGrub.entitlements */,
 				044BD7262C368085003E91D6 /* DubDubGrubApp.swift */,
+				04053C322C6CBF8C00DC6DC2 /* Model */,
 				042660A82C47FF090085CD9C /* Views */,
 				042660A72C47FF000085CD9C /* Extension */,
 				044BD72A2C368086003E91D6 /* Assets.xcassets */,
@@ -210,6 +221,7 @@
 				042660A62C47FE360085CD9C /* DDGButton.swift in Sources */,
 				042660A42C47FDCF0085CD9C /* View + Ext.swift in Sources */,
 				046656092C4674F00027A6AD /* LocationMapView.swift in Sources */,
+				04053C342C6CBF9700DC6DC2 /* DDGLocation.swift in Sources */,
 				0466560B2C46750F0027A6AD /* LocationListView.swift in Sources */,
 				0466560F2C467B890027A6AD /* LocationDetailView.swift in Sources */,
 				046656072C4674E10027A6AD /* AppTabView.swift in Sources */,
